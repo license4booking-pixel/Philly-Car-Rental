@@ -3,9 +3,17 @@ import { Check } from 'lucide-react';
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-24 bg-slate-900 border-y border-white/5 relative">
+    <section id="pricing" className="py-24 relative bg-slate-900 border-y border-white/5 overflow-hidden">
       {/* Decorative background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gold-500/5 blur-[120px] rounded-full pointer-events-none" />
+      
+      {/* Dynamic Background Animations */}
+      <div className="absolute opacity-30 pointer-events-none w-full h-[1px] top-[10%] left-0">
+        <div className="glow-line" style={{ animationDelay: '1s' }} />
+      </div>
+      <div className="absolute opacity-20 pointer-events-none w-[1px] h-full top-0 right-[25%]">
+        <div className="glow-line-vertical" style={{ animationDelay: '5s' }} />
+      </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div 

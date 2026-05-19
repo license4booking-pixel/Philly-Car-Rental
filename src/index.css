@@ -30,22 +30,22 @@ body {
     linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
   background-size: 60px 60px;
-  mask-image: radial-gradient(circle at 50% 50%, white, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
 }
 
 .text-gradient-animate {
   background: linear-gradient(
     to right,
     #F59E0B,
-    #D97706,
-    #FBBF24,
+    #FDE68A,
     #F59E0B
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: shine 4s linear infinite;
+  animation: shine 3s linear infinite;
 }
 
 @keyframes shine {
@@ -57,6 +57,53 @@ body {
 .parallax-blur {
   filter: blur(100px);
   will-change: transform;
+}
+
+/* Linear-style glowing animated line */
+.glow-line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.5), #F59E0B, rgba(245, 158, 11, 0.5), transparent);
+  height: 1px;
+  width: 200px;
+  animation: move-line 8s linear infinite;
+  opacity: 0;
+}
+
+@keyframes move-line {
+  0% { transform: translateX(-200%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(100vw); opacity: 0; }
+}
+
+.glow-line-vertical {
+  position: absolute;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.2), #fff, rgba(255, 255, 255, 0.2), transparent);
+  width: 1px;
+  height: 200px;
+  animation: move-line-vert 12s linear infinite;
+  opacity: 0;
+}
+
+@keyframes move-line-vert {
+  0% { transform: translateY(-200%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.gradient-sweep {
+  position: absolute;
+  background: conic-gradient(from 180deg at 50% 50%, transparent 0deg, rgba(245, 158, 11, 0.1) 180deg, transparent 360deg);
+  animation: sweep 10s linear infinite;
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+@keyframes sweep {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .bg-radial-gradient {

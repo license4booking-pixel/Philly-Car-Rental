@@ -76,8 +76,16 @@ const cars = [
 
 export function FeaturedCars() {
   return (
-    <section id="fleet" className="py-24 relative overflow-hidden bg-slate-950">
-      <div className="bg-grid absolute inset-0 opacity-10" />
+    <section id="fleet" className="relative py-24 overflow-hidden bg-slate-950">
+      <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none" />
+      
+      {/* Dynamic Background Animations */}
+      <div className="absolute top-1/4 -left-[20%] w-[80%] aspect-square gradient-sweep pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-[20%] w-[80%] aspect-square gradient-sweep pointer-events-none" style={{ animationDirection: 'reverse', animationDuration: '15s' }} />
+
+      <div className="absolute top-[30%] left-0 w-full h-[1px] opacity-10 pointer-events-none">
+        <div className="glow-line" style={{ animationDelay: '2s' }} />
+      </div>
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div 

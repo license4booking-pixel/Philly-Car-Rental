@@ -17,6 +17,21 @@ export function Hero() {
     <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Grids and Glows (Linear Style) */}
       <motion.div style={{ y: y1 }} className="absolute inset-0 bg-grid opacity-30 pointer-events-none" />
+      
+      {/* Animated glowing lines */}
+      <div className="absolute top-[20%] left-0 w-full h-[1px] opacity-30 pointer-events-none">
+        <div className="glow-line" style={{ animationDelay: '0s' }} />
+      </div>
+      <div className="absolute top-[60%] left-0 w-full h-[1px] opacity-20 pointer-events-none">
+        <div className="glow-line" style={{ animationDelay: '4s', width: '300px' }} />
+      </div>
+      <div className="absolute top-0 left-[30%] w-[1px] h-full opacity-20 pointer-events-none">
+        <div className="glow-line-vertical" style={{ animationDelay: '2s' }} />
+      </div>
+      <div className="absolute top-0 left-[70%] w-[1px] h-full opacity-20 pointer-events-none">
+        <div className="glow-line-vertical" style={{ animationDelay: '7s' }} />
+      </div>
+
       <motion.div style={{ y: y2 }} className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gold-500/10 parallax-blur rounded-full animate-pulse-slow pointer-events-none" />
       <motion.div style={{ y: y1 }} className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-blue-500/5 parallax-blur rounded-full animate-pulse-slow pointer-events-none" />
 

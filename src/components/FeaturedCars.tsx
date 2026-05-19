@@ -40,7 +40,7 @@ const cars = [
     fuel: "Gasoline",
     seats: 5,
     popular: true,
-    image: "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fd?q=80&w=2952&auto=format&fit=crop"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiX7GqxkKbYvjbdqdCO9gs-vGnw9uYdglvLCukwNy9xqq3YIRaq94nhM2o&s=10"
   },
   {
     name: "Dodge Charger",
@@ -50,7 +50,7 @@ const cars = [
     fuel: "Gasoline",
     seats: 5,
     popular: false,
-    image: "https://images.unsplash.com/photo-1626079949666-ac5ebc761c94?q=80&w=2940&auto=format&fit=crop"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3CXOCkLtdZJFbCDeCIY1DjLNC4Z52uBTBemk8O1gmr3WWQ3ye96Y-ENc&s=10"
   },
   {
     name: "Ford Mustang",

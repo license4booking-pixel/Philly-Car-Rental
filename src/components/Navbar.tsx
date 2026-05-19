@@ -39,10 +39,10 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center space-x-8">
-          <a href="#fleet" className="text-sm font-medium text-slate-300 hover:text-gold-500 transition-colors">Fleet</a>
-          <a href="#how-it-works" className="text-sm font-medium text-slate-300 hover:text-gold-500 transition-colors">How It Works</a>
-          <a href="#pricing" className="text-sm font-medium text-slate-300 hover:text-gold-500 transition-colors">Pricing</a>
-          <a href="#blog" className="text-sm font-medium text-slate-300 hover:text-gold-500 transition-colors">Blog</a>
+          <a href="/#fleet" className="text-sm font-medium text-slate-300 hover:text-gold-500 transition-colors">Fleet</a>
+          <a href="/#how-it-works" className="text-sm font-medium text-slate-300 hover:text-gold-500 transition-colors">How It Works</a>
+          <a href="/#pricing" className="text-sm font-medium text-slate-300 hover:text-gold-500 transition-colors">Pricing</a>
+          <a href="/#blog" className="text-sm font-medium text-slate-300 hover:text-gold-500 transition-colors">Blog</a>
           
           <div className="h-4 w-[1px] bg-white/10" />
           
@@ -81,10 +81,10 @@ export function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="lg:hidden absolute top-full left-0 right-0 glass border-b border-white/10 p-6 flex flex-col space-y-4"
         >
-          <a href="#fleet" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Fleet</a>
-          <a href="#how-it-works" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>How It Works</a>
-          <a href="#pricing" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
-          <a href="#blog" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Blog</a>
+          <a href="/#fleet" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Fleet</a>
+          <a href="/#how-it-works" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>How It Works</a>
+          <a href="/#pricing" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
+          <a href="/#blog" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Blog</a>
           
           <a 
             href="https://www.instagram.com/phillycarrentals?igsh=bm9jbG9xbnpwZWdo" 
